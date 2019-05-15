@@ -1,2 +1,2 @@
 # git-tips  
-How to generate SSH key
+How to generate GitHub SSH key
