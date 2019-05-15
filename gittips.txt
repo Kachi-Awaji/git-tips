@@ -1,0 +1,20 @@
+Adding an SSH key to your GITHUB account
+
+To create the key
+	ssh-keygen -t rsa -b 4096 -C "your email address here"
+
+To start ssh-agent
+	eval $(ssh-agent -s)
+
+Add key to ssh-agent
+	ssh-add ~/.ssh/id_rsa
+
+Copy key to clipboard
+	clip < ~/.ssh/id_rsa.pub
+
+
+Go to Github. click profile picture then go to settings.
+
+Reconfigure your git repo
+git remote set-url origin git@github.com:name/repo
+
